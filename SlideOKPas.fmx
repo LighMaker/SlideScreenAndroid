@@ -1,0 +1,113 @@
+object Form3: TForm3
+  Left = 990
+  Top = 180
+  Caption = 'Form1'
+  ClientHeight = 599
+  ClientWidth = 359
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnResize = FormCreate
+  Left = 990
+  Top = 180
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 1080.000000000000000000
+    Size.Height = 599.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridLayout2: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Position.X = 360.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Button1: TButton
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'bookmarkstoolbutton'
+        TabOrder = 0
+        Text = 'Button1'
+      end
+    end
+    object GridLayout1: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle2: TRectangle
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF17E557
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF0E70E8
+            Offset = 0.481366455554962200
+          end
+          item
+            Color = xFFF8E6E6
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object GridLayout3: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Position.X = 720.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle1: TRectangle
+        Fill.Color = claCrimson
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object ScrollBar1: TScrollBar
+    Align = Bottom
+    Max = 380.000000000000000000
+    ViewportSize = 20.000000000000000000
+    SmallChange = 0.000000000000000000
+    Orientation = Horizontal
+    Position.Y = 593.000000000000000000
+    Size.Width = 359.000000000000000000
+    Size.Height = 6.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnChange = ScrollBar1Change
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Value'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end
