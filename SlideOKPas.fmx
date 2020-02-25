@@ -1,0 +1,82 @@
+object Form3: TForm3
+  Left = 990
+  Top = 180
+  Caption = 'Form1'
+  ClientHeight = 600
+  ClientWidth = 360
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnResize = FormCreate
+  Left = 990
+  Top = 180
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 1080.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridLayout2: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Position.X = 360.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Rectangle3: TRectangle
+        Fill.Color = claWhite
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object GridLayout1: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle2: TRectangle
+        Fill.Color = xFF2012D9
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object GridLayout3: TGridLayout
+      HitTest = False
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 64.000000000000000000
+      Orientation = Horizontal
+      Position.X = 720.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle1: TRectangle
+        Fill.Color = claCrimson
+        Size.Width = 64.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end
